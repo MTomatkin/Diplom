@@ -40,12 +40,12 @@ body {
 .header {
     width: 100%;
     height: 56px;
-
-    min-width: 250px;
+    
 
     .header-top {
         width: 100%;
         height: 7px;
+        min-width: 400px;
 
         background: linear-gradient(to right, #00A5D9, #8000FF);
     }
@@ -54,7 +54,7 @@ body {
 
         width: 100%;
         height: calc(100% - 7px);
-
+        
         display: flex;
 
         .logo {
@@ -64,22 +64,27 @@ body {
 
             height: 90%;
             width: 20%;
-            margin: 0 5px;   
+            margin: 4px 5px;
+
+            min-height: 20px; 
+            min-width: 150px;          
+
             
             .icon {
                 background-image: url(/img/logo.png);
-                width: 55px;
-                height: 60%;
+                min-width: 55px;
+                min-height: 60%;
 
                 background-size: 50%;
                 background-repeat: no-repeat;
                 background-position: right;
 
                 margin-right: 2px;
+                
+
             }
 
             
-
         }
 
         .left-menu{
@@ -89,8 +94,6 @@ body {
             display: flex;
             justify-content: flex-start;
             align-items: center;
-
-
 
             .products {
                 width: 0%;
@@ -142,6 +145,10 @@ body {
                     color: black;
                     
                 }
+
+                .logo {
+                    position: fixed;
+                }
                 
               }
 
@@ -161,6 +168,7 @@ body {
         .right-menu{
             width: 50%;
             height: 100%;
+            min-width: 150px;
     
             display: flex;
             justify-content: center;
