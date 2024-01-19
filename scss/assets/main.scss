@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    
 }
 
 .arrow1 {
@@ -32,6 +33,9 @@ body {
 .container {
     width: 100%;
     height: 1166px;
+
+    display: flex;
+    flex-direction: column;
 
     background-color: #FEFEFE;
 
@@ -244,7 +248,7 @@ body {
                 }
 
                 .menu__item#language {
-                    position: fixed;
+                    position: absolute;
 
                     transform: translate(-25px);
                 }
@@ -392,11 +396,48 @@ body {
             transform: translate(0, 0);
 
         }
-        
+
+        .offer__text {
+            margin-left: 40px;
+            text-align: end;
+        }        
 
       }
 
 }
+
+.news {
+    margin: 20px;
+    width: 1200px;
+
+    background-color: #bebebe;
+
+    align-self: center;
+
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 40px 100px;
+    gap: 20px 40px;
+
+    .news__item#title {
+        padding: 10px;
+        border: 1px dashed #444;
+        background-color: #ccc;
+
+        grid-column: 1/4;
+    }
+
+    .news__item {
+        padding: 10px;
+        border: 1px dashed #444;
+        background-color: #ccc;
+        
+    }
+
+}
+
 
 @media (max-width: 760px) {
     .slider{
@@ -414,7 +455,7 @@ body {
 
                 .offer__button {
                     width: 90%;
-                    
+                    margin-bottom: 20px;
                 }
 
                 .offer__text {
@@ -452,8 +493,31 @@ body {
 
     .arrow2 {
         border: none;   
-    }    
+    }   
+    
+    .news {
+        width: 90%;
+        grid-template-columns: 30% 30% 30%;
+    }
   }
+
+@media (max-width: 1000px){
+    .news {
+        grid-template-columns: 1fr;
+        grid-template-rows: 40px 100px 100px 100px;
+
+        .news__item#title {
+            padding: 10px;
+            border: 1px dashed #444;
+            background-color: #ccc;
+    
+            grid-column: 1/1;
+        }
+    }
+
+
+    
+}
 
   @media (max-width: 700px) {
     .arrow1 {
