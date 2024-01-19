@@ -83,7 +83,7 @@ body {
   min-width: 150px;
 }
 .header .menu .logo .icon {
-  background-image: url(./img/logo.png);
+  background-image: url(../img/logo.png);
   min-width: 55px;
   min-height: 60%;
   background-size: 50%;
