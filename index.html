@@ -65,10 +65,111 @@
             <div class="news__item" id="title">
                 Новости
             </div>
-            <div class="news__item">1</div>
-            <div class="news__item">2</div>
-            <div class="news__item">3</div>
+            <div class="news__item">
+                <div class="news__item__date">
+                    <img class="calendar" src="./img/Calendar.png">
+                    <p class="date">Сегодня</p>
+                </div>
+                <div class="news__item__text">
+                    Наш банк предлагает своим клиентам новую услугу — «Рефинансирование без процентов». Если вы уже взяли кредит в другом банке, но хотите снизить ежемесячный платеж, то мы готовы перевести ваш кредит к нам, а все проценты оплатить за вас.
+                </div>
+            </div>
+            <div class="news__item">
+                <div class="news__item__date">
+                    <img class="calendar" src="./img/Calendar.png">
+                    <p class="date">Сегодня</p>
+                </div>
+                <div class="news__item__text">
+                    Наш банк представил новую кредитную программу «Счастливое детство». Теперь все родители могут получить кредит на развитие бизнеса или ремонт жилья без залога и поручителей. 
+                </div>
+            </div>
+            <div class="news__item">
+                <div class="news__item__date">
+                    <img class="calendar" src="./img/Calendar.png">
+                    <p class="date">Сегодня</p>
+                </div>
+                <div class="news__item__text">
+                    Наш банк выпустил новую кредитную карту с кэшбэком до 10%. Теперь вы можете получать деньги за каждую покупку, совершенную по карте. Закажите нашу кредитную карту и начните экономить уже сегодня! 
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="calculator_and_credit">
+            <div class="calculator">
+                <div class="calculator__title">Курсы Валют</div>
+                <div class="calculator__notice">Актуально на 22:00, 11 декабря 2023 г. </div>
+                <div class="calculator__calculation">
+                    <div class="calculator__currencies">
+                        <div class="currency">
+                            <div class="currency-item selected_currency">USD</div>
+                            
+                                <div class="currency-item title1">продать</div>
+                                <div class="currency-item sum1">87,80</div>  
+                                <div class="currency-item title2">купить</div>
+                                <div class="currency-item sum2">93,30</div>
+
+                        </div>
+
+                        <div class="currency">
+                            <div class="currency-item selected_currency">EUR</div>
+                            
+                                <div class="currency-item title1">продать</div>
+                                <div class="currency-item sum1">92,80</div>  
+                                <div class="currency-item title2">купить</div>
+                                <div class="currency-item sum2">100,00</div>
+
+                        </div>                      
+                    </div>
+                    <div class="calculator__sum">
+                        <label for="num1">продам</label>
+                        <div class="calculator__sum__value">
+                            <input type="text" placeholder="  10 000" id="num1">
+                            <select id="dropdown1">
+                                <option selected disabled hidden>RUB</option>
+                                <option value="RUB">RUB</option>
+                                <option value="RUB">USD</option>
+                                <option value="RUB">EUR</option>
+                            </select>
+                        </div>
+                        <label for="num2">получу</label>
+                        <div class="calculator__sum__value">
+                            <input type="text" placeholder="  100" id="num2">
+                            <select id="dropdown2">
+                                <option selected disabled hidden>EUR</option>
+                                <option value="RUB">RUB</option>
+                                <option value="RUB">USD</option>
+                                <option value="RUB">EUR</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="credit">
+                <div class="credit__title">Рассчитайте свой кредит</div>
+                <div class="credit__calculation">
+                    
+                    <div class="credit__sum">
+                        <label for="num3">Сколько вам нужно</label>
+                        <div class="credit__sum__value">
+                            <input type="text" placeholder="    10 000 000" id="num3">
+                        </div>
+                        <label for="num4">На срок</label>
+                        <div class="credit__sum__value">
+                            <input type="text" placeholder="    1 год 2 месяца" id="num4">
+                        </div>
+
+                    </div>
+
+                    <div class="credit__rate">
+                        <label for="num5">Ставка</label>
+                        <div id="num5">15,9%</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>f
 </body>
 </html>
