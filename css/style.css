@@ -52,9 +52,10 @@ body {
 
 .container {
   width: 100%;
-  height: 1166px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   background-color: #FEFEFE;
 }
 
@@ -347,7 +348,8 @@ body {
 
 .calculator_and_credit {
   margin: 20px;
-  width: 1200px;
+  width: 1500px;
+  height: 500px;
   align-self: center;
   justify-content: center;
   display: grid;
@@ -524,6 +526,59 @@ body {
   font-weight: bold;
 }
 
+.footer {
+  background-color: #171A1E;
+  width: 100%;
+  height: fit-content;
+  align-self: flex-end;
+  font-family: Arial;
+  font-size: 12pt;
+  font-weight: bold;
+  color: #E3E3E3;
+  display: grid;
+  grid-template-columns: 230px 230px;
+  gap: 50px;
+  justify-content: center;
+}
+.footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+.footer .footer-links .footer-links-item {
+  height: 50px;
+}
+.footer .footer-contacts {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.footer .footer-contacts .footer-contacts-item {
+  margin-bottom: 30px;
+}
+.footer .footer-contacts #social {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+.footer .footer-contacts .desc {
+  font-size: 10pt;
+  font-weight: 400;
+}
+.footer .footer-contacts .nav-link {
+  text-decoration: none;
+}
+.footer .footer-contacts .nav-link img {
+  height: 40px;
+}
+.footer .footer-contacts p {
+  margin: 0;
+}
+
 @media (max-width: 760px) {
   .slider {
     flex-direction: column-reverse;
@@ -579,19 +634,76 @@ body {
   }
   .news .news__item#title {
     padding: 10px;
-    border: 1px dashed #444;
-    background-color: #ccc;
     grid-column: 1/1;
   }
   .calculator_and_credit {
     width: 90%;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 250px 250px;
     margin-top: 10px;
+    height: fit-content;
+  }
+  .footer {
+    grid-template-columns: 230px;
+    gap: 0px;
+  }
+  .footer .footer-links {
+    height: 70px;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .footer .footer-contacts {
+    height: 180px;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .footer .footer-contacts .footer-contacts-item {
+    margin-bottom: 10px;
+  }
+  .footer .footer-contacts #social {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 30px;
+  }
+  .footer .footer-contacts .desc {
+    font-size: 10pt;
+    font-weight: 400;
+  }
+  .footer .footer-contacts .nav-link {
+    text-decoration: none;
+  }
+  .footer .footer-contacts .nav-link img {
+    height: 40px;
+  }
+  .footer .footer-contacts p {
+    margin: 0;
   }
 }
 @media (max-width: 700px) {
   .arrow1 {
     opacity: 0%;
+  }
+}
+@media (max-width: 500px) {
+  .calculator_and_credit {
+    width: 90%;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 400px;
+    margin-top: 10px;
+  }
+  .calculator__calculation {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100px;
+    gap: 10px 7px;
+    margin-top: 15px;
+  }
+  .calculator__calculation .calculator__currencies {
+    grid-column: 1/3;
+  }
+  .calculator__calculation .calculator__sum {
+    grid-column: 1/3;
+    grid-template-columns: 100%;
+    margin-top: 8px;
   }
 }
